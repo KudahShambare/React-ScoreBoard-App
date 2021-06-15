@@ -1,4 +1,6 @@
 import React from "react";
+import Players from "./Players";
+
 
 function Countries(props){
   console.log(props.allCountryScores[1].scores[1].n);
@@ -6,16 +8,15 @@ function Countries(props){
     <div style={{border:"solid",width:"80%",textAlign:"center",marginLeft:"10%"}}>
      {props.allCountryScores.map((country)=>{
        return(
-        <h1>{country.name}</h1>        
+         <div>
+        <h1>{country.name}</h1>
+        <hr/>
+        <Players allCountryScores={props.allCountryScores}/>
+        </div>
        )
     })
     }
-    {props.allCountryScores.map((country)=>{
-      return country.scores.map((player)=>{
-        return <h2>{player.n}</h2>
-      })
-    }
-    )}
+    
 </div>
 )
   };
