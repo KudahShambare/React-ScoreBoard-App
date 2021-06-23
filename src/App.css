@@ -1,16 +1,23 @@
 .App {
   text-align: center;
 }
-
-li{
+/*Single Country*/
+li {
   list-style: none;
+  text-align: center;
+  border: 12px solid greenyellow;
+  margin-bottom: 9%;
+  margin-right: 5%;
 }
-#countriesReturn{
-border-style: solid;
-width: 80%;
-        text-align: "center";
-        margin-left: 10%;      
+/*Outer Div*/
+#countriesReturn {
+  border: 5px solid blue;
+  border-style: solid;
+  width: 80%;
+  text-align: "center";
+  margin-left: 10%;
+  margin-bottom: 5%;
 }
-h1{
+h1 {
   text-align: center;
 }
