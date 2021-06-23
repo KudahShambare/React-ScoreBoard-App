@@ -9,11 +9,10 @@ function Countries(props) {
             <li key={index}>
               <h1>High Scores: {country.name}</h1>
               <hr />
-              {props.allCountryScores[index].scores.map((player, num) => {
+              {props.allCountryScores[index].scores.sort((a,b)=>a.s>b.s).map((player, num) => {
                 return (
                   <div>
                     <h2 key={num}>
-                      {" "}
                       <pre>
                         {player.n} {player.s}
                       </pre>{" "}

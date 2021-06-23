@@ -30,5 +30,6 @@ let allCountryScores = [
       name: "Bangladesh", 
       scores: [ {n: "rahman", s: 700200}, {n: "rayhan", s: 18238123}, {n: "ali", s: 5400000} ]
     },
-  ];
+];
+
   export default allCountryScores;

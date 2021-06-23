@@ -7,7 +7,7 @@ function App() {
   return (
     <div id="container">
       <h1 > High Scores Per Country </h1>
-      <Countries allCountryScores={allCountryScores} />
+      <Countries allCountryScores={allCountryScores.sort((a,b)=>a.name>b.name)} />
     </div>
   );
 }
